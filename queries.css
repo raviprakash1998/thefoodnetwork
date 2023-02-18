@@ -1,0 +1,1463 @@
+/* Desktops & large Screens  1025px & above */
+@media (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: Poppins, sans-serif;
+    line-height: 1;
+    font-weight: 300;
+    color: #333;
+  }
+  .heading-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.4rem;
+    text-align: center;
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+  span {
+    padding: 1rem;
+    color: #cf711f;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ---------------------------------hero-section---------------------------------------- */
+
+  .section-hero {
+    background-color: #6096b4;
+  }
+  .hero {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 5rem;
+    padding: 3.2rem;
+  }
+  .heading-primary {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+  }
+  .hero-description {
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 4rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .btn--left {
+    background-color: orange;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--right {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .btn--left:hover,
+  .btn--left:active {
+    background-color: #d67b2b;
+    transition: 300ms;
+  }
+
+  .btn--right:hover,
+  .btn--right:active {
+    background-color: #efe6df;
+    box-shadow: inset 0 0 0 2px #fff;
+  }
+  .delivered-meals {
+    display: flex;
+    margin: 5rem 0;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .customers-imgs {
+    display: flex;
+  }
+  .customers-imgs img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: -1.2rem;
+    border: 2px solid #fdf2e9;
+  }
+  .customers-imgs img:last-child {
+    margin-right: 0;
+  }
+  .delivered-text {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 600;
+    align-items: center;
+  }
+  .delivered-text span {
+    color: #cf711f;
+  }
+
+  /* ---------------------------- features ---------------------------------- */
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .feature img {
+    width: 5rem;
+  }
+  .feature:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.115);
+  }
+
+  /* ---------------------------------menus-section----------------------------------------- */
+
+  .section-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #93bfcf;
+    margin: 0 auto;
+  }
+  .menu {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu-items:hover {
+    transform: translateY(-8px);
+    transition: 0.4s;
+  }
+  .menu-items img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .menu-items p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  /* ----------------------------about-section------------------------------------ */
+
+  .section-about {
+    background-color: #bdcdd6;
+  }
+  .aboutus {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem;
+  }
+  .about-restaurant p {
+    display: flex;
+    font-size: 1.6rem;
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  .about-restaurant h3 {
+    display: flex;
+    font-size: 2.2rem;
+    text-align: left;
+  }
+  .about-restaurant h3 span {
+    padding: 1.5rem 0;
+  }
+  .about-img img {
+    width: 100%;
+  }
+
+  /* <--------------------------contact section----------------------------> */
+
+  .section-contact {
+    background-color: #eee9da;
+  }
+  .contact {
+    display: grid;
+    max-width: 130rem;
+    margin: 0 auto;
+    align-items: center;
+    gap: 5rem;
+    padding: 3.2rem;
+  }
+  .contact-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-size: 2rem;
+  }
+  .contact-address h3 {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .contact-address p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contact-address ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #cf711f;
+  }
+  .contact-address ul li {
+    display: flex;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .contact-address ul li ion-icon {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form form {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn--submit {
+    font-size: 3rem;
+    padding: 1.6rem 4rem;
+    background-color: #cf711f;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--submit:hover,
+  .btn--submit:active {
+    transform: translateY(-5px);
+    transition: 0.4s;
+  }
+
+  /* <--------------------------footer section----------------------------> */
+
+  .section-footer {
+    background-color: #485a67;
+  }
+  .footer-links {
+    color: #333333;
+    display: grid;
+    max-width: 130rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  .logo-footer {
+    font-size: 2.6rem;
+    color: #cf711f;
+  }
+  .links {
+    width: 100%;
+  }
+  .links h3 {
+    font-size: 3rem;
+    margin: 5rem auto 2rem;
+  }
+  .links ul {
+    list-style: none;
+  }
+  .links ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  .links ul li a ion-icon {
+    font-weight: bold;
+  }
+  .links ul li a:hover,
+  .links ul li a:active {
+    color: #cf711f;
+  }
+}
+/* Laptop & Small Screens 769px - 1024px */
+@media (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: Poppins, sans-serif;
+    line-height: 1;
+    font-weight: 300;
+    color: #333;
+  }
+  .heading-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  span {
+    padding: 1rem;
+    color: #cf711f;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ---------------------------------hero-section---------------------------------------- */
+
+  .section-hero {
+    background-color: #6096b4;
+  }
+  .hero {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3.2rem;
+    padding: 2.4rem;
+  }
+  .heading-primary {
+    font-size: 2.4rem;
+    margin: 1.6rem 0;
+  }
+  .hero-description {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .btn--left {
+    background-color: orange;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--right {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .btn--left:hover,
+  .btn--left:active {
+    background-color: #d67b2b;
+    transition: 300ms;
+  }
+
+  .btn--right:hover,
+  .btn--right:active {
+    background-color: #efe6df;
+    box-shadow: inset 0 0 0 2px #fff;
+  }
+  .delivered-meals {
+    display: flex;
+    margin: 5rem 0;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .customers-imgs {
+    display: flex;
+  }
+  .customers-imgs img {
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 50%;
+    margin-right: -1rem;
+    border: 2px solid #fdf2e9;
+  }
+  .customers-imgs img:last-child {
+    margin-right: 0;
+  }
+  .delivered-text {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+  }
+  .delivered-text span {
+    color: #cf711f;
+  }
+
+  /* ---------------------------- features ---------------------------------- */
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .feature img {
+    width: 5rem;
+  }
+  .feature:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.115);
+  }
+
+  /* ---------------------------------menus-section----------------------------------------- */
+
+  .section-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #93bfcf;
+    margin: 0 auto;
+  }
+  .menu {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.6rem;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu-items:hover {
+    transform: translateY(-8px);
+    transition: 0.4s;
+  }
+  .menu-items img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .menu-items p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  /* ----------------------------about-section------------------------------------ */
+
+  .section-about {
+    background-color: #bdcdd6;
+  }
+  .aboutus {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+    padding: 2.4rem;
+  }
+  .about-restaurant p {
+    display: flex;
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+    letter-spacing: 0.4px;
+  }
+  .about-restaurant h3 {
+    display: flex;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .about-restaurant h3 span {
+    padding: 1.5rem 0;
+  }
+  .about-img img {
+    width: 100%;
+  }
+
+  /* <--------------------------contact section----------------------------> */
+
+  .section-contact {
+    background-color: #eee9da;
+  }
+  .contact {
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 4rem;
+    padding: 2.4rem;
+  }
+  .contact-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-size: 1.6rem;
+  }
+  .contact-address h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .contact-address p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+  .contact-address ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #cf711f;
+  }
+  .contact-address ul li {
+    display: flex;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+  .contact-address ul li ion-icon {
+    font-size: 2.2rem;
+    margin-right: 0.8rem;
+    font-weight: bold;
+  }
+  .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form form {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn--submit {
+    font-size: 3rem;
+    padding: 1.6rem 4rem;
+    background-color: #cf711f;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--submit:hover,
+  .btn--submit:active {
+    transform: translateY(-5px);
+    transition: 0.4s;
+  }
+
+  /* <--------------------------footer section----------------------------> */
+
+  .section-footer {
+    background-color: #485a67;
+  }
+  .footer-links {
+    color: #333333;
+    display: grid;
+    max-width: 130rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  .logo-footer {
+    font-size: 3rem;
+    color: #cf711f;
+  }
+  .links {
+    width: 100%;
+  }
+  .links h3 {
+    font-size: 3rem;
+    margin: 5rem auto 2rem;
+  }
+  .links ul {
+    list-style: none;
+  }
+  .links ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  .links ul li a ion-icon {
+    font-weight: bold;
+  }
+  .links ul li a:hover,
+  .links ul li a:active {
+    color: #cf711f;
+  }
+}
+/* iPads & Tablets Screens 481px - 768px */
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: Poppins, sans-serif;
+    line-height: 1;
+    font-weight: 300;
+    color: #333;
+  }
+  .heading-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  span {
+    padding: 1rem;
+    color: #cf711f;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ---------------------------------hero-section---------------------------------------- */
+
+  .section-hero {
+    background-color: #6096b4;
+  }
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    padding: 0 3.2rem;
+  }
+  .heading-primary {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .hero-description {
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .hero-img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .btn--left {
+    background-color: orange;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--right {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .btn--left:hover,
+  .btn--left:active {
+    background-color: #d67b2b;
+    transition: 300ms;
+  }
+
+  .btn--right:hover,
+  .btn--right:active {
+    background-color: #efe6df;
+    box-shadow: inset 0 0 0 2px #fff;
+  }
+  .delivered-meals {
+    display: flex;
+    margin: 3.6rem 0;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .customers-imgs {
+    display: flex;
+  }
+  .customers-imgs img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: -1.2rem;
+    border: 2px solid #fdf2e9;
+  }
+  .customers-imgs img:last-child {
+    margin-right: 0;
+  }
+  .delivered-text {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-items: center;
+  }
+  .delivered-text span {
+    color: #cf711f;
+  }
+
+  /* ---------------------------- features ---------------------------------- */
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .feature_content h3 {
+    font-size: 1.6;
+    font-family: bold;
+  }
+  .feature_content p {
+    font-size: 1.2rem;
+  }
+  .feature img {
+    width: 5rem;
+  }
+  .feature:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.115);
+  }
+
+  /* ---------------------------------menus-section----------------------------------------- */
+
+  .section-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #93bfcf;
+    margin: 0 auto;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu-items:hover {
+    transform: translateY(-8px);
+    transition: 0.4s;
+  }
+  .menu-items img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .menu-items p {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  /* ----------------------------about-section------------------------------------ */
+
+  .section-about {
+    background-color: #bdcdd6;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  .about-restaurant p {
+    display: flex;
+    font-size: 1.6rem;
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  .about-restaurant h3 {
+    display: flex;
+    font-size: 2.2rem;
+    text-align: left;
+  }
+  .about-restaurant h3 span {
+    padding: 1.5rem 0;
+  }
+  .about-img img {
+    width: 100%;
+  }
+
+  /* <--------------------------contact section----------------------------> */
+
+  .section-contact {
+    background-color: #eee9da;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3.2rem;
+  }
+  .contact-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-size: 1.6rem;
+  }
+  .contact-address h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .contact-address p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contact-address ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #cf711f;
+  }
+  .contact-address ul li {
+    display: flex;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .contact-address ul li ion-icon {
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form form {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn--submit {
+    font-size: 2rem;
+    padding: 1.4rem 4rem;
+    background-color: #cf711f;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--submit:hover,
+  .btn--submit:active {
+    transform: translateY(-5px);
+    transition: 0.4s;
+  }
+
+  /* <--------------------------footer section----------------------------> */
+
+  .section-footer {
+    background-color: #485a67;
+  }
+  .footer-links {
+    color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  .logo-footer {
+    font-size: 3rem;
+    color: #cf711f;
+    margin-top: 2rem;
+  }
+  .links {
+    width: 100%;
+  }
+  .links h3 {
+    font-size: 3rem;
+    margin: 2rem auto;
+  }
+  .links ul {
+    list-style: none;
+  }
+  .links ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  .links ul li a ion-icon {
+    font-weight: bold;
+  }
+  .links ul li a:hover,
+  .links ul li a:active {
+    color: #cf711f;
+  }
+}
+/* Mobile Screens 360px - 480px */
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: Poppins, sans-serif;
+    line-height: 1;
+    font-weight: 300;
+    color: #333;
+  }
+  .heading-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  span {
+    padding: 1rem;
+    color: #cf711f;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ---------------------------navbar-section--------------------------------------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+    position: sticky;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 1rem;
+  }
+  .navbar li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+  .nav-item {
+    margin: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: #33333382;
+    font-weight: bold;
+    padding: 0.6rem;
+    margin-left: 0.2rem;
+  }
+  .active {
+    color: orange;
+  }
+  .nav-item:hover,
+  .nav-item:active,
+  .navbar-icon:hover,
+  .navbar-icon:active {
+    color: orange;
+  }
+  .navbar-icons {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-right: 2rem;
+  }
+  .navbar-icon {
+    color: #33333382;
+    padding: 0 0.5rem;
+  }
+
+  /* ---------------------------------hero-section---------------------------------------- */
+
+  .section-hero {
+    background-color: #6096b4;
+  }
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    padding: 0 3.2rem;
+  }
+  .heading-primary {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .hero-description {
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .hero-img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .btn--left {
+    background-color: orange;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--right {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .btn--left:hover,
+  .btn--left:active {
+    background-color: #d67b2b;
+    transition: 300ms;
+  }
+
+  .btn--right:hover,
+  .btn--right:active {
+    background-color: #efe6df;
+    box-shadow: inset 0 0 0 2px #fff;
+  }
+  .delivered-meals {
+    display: flex;
+    margin: 5rem 0;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .customers-imgs {
+    display: flex;
+  }
+  .customers-imgs img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: -1.2rem;
+    border: 2px solid #fdf2e9;
+  }
+  .customers-imgs img:last-child {
+    margin-right: 0;
+  }
+  .delivered-text {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-items: center;
+  }
+  .delivered-text span {
+    color: #cf711f;
+  }
+
+  /* ---------------------------- features ---------------------------------- */
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .feature_content h3 {
+    font-size: 1.6;
+    font-family: bold;
+  }
+  .feature_content p {
+    font-size: 1.2rem;
+  }
+  .feature img {
+    width: 5rem;
+  }
+  .feature:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.115);
+  }
+
+  /* ---------------------------------menus-section----------------------------------------- */
+
+  .section-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #93bfcf;
+    margin: 0 auto;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu-items:hover {
+    transform: translateY(-8px);
+    transition: 0.4s;
+  }
+  .menu-items img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .menu-items p {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  /* ----------------------------about-section------------------------------------ */
+
+  .section-about {
+    background-color: #bdcdd6;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  .about-restaurant p {
+    display: flex;
+    font-size: 1.6rem;
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  .about-restaurant h3 {
+    display: flex;
+    font-size: 2.2rem;
+    text-align: left;
+  }
+  .about-restaurant h3 span {
+    padding: 1.5rem 0;
+  }
+  .about-img img {
+    width: 100%;
+  }
+
+  /* <--------------------------contact section----------------------------> */
+
+  .section-contact {
+    background-color: #eee9da;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3.2rem;
+  }
+  .contact-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-size: 1.6rem;
+  }
+  .contact-address h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .contact-address p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contact-address ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #cf711f;
+  }
+  .contact-address ul li {
+    display: flex;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .contact-address ul li ion-icon {
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form form {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn--submit {
+    font-size: 2rem;
+    padding: 1.4rem 4rem;
+    background-color: #cf711f;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn--submit:hover,
+  .btn--submit:active {
+    transform: translateY(-5px);
+    transition: 0.4s;
+  }
+
+  /* <--------------------------footer section----------------------------> */
+
+  .section-footer {
+    background-color: #485a67;
+  }
+  .footer-links {
+    color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  .logo-footer {
+    font-size: 3rem;
+    color: #cf711f;
+    margin-top: 2rem;
+  }
+  .links {
+    width: 100%;
+  }
+  .links h3 {
+    font-size: 3rem;
+    margin: 2rem auto;
+  }
+  .links ul {
+    list-style: none;
+  }
+  .links ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  .links ul li a ion-icon {
+    font-weight: bold;
+  }
+  .links ul li a:hover,
+  .links ul li a:active {
+    color: #cf711f;
+  }
+}
